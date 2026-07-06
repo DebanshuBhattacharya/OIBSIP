@@ -1,1 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Temperature Converter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Background -->
+    <div class="bg">
+      <div class="grid"></div>
+
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+    </div>
+
+    <!-- Floating Symbols -->
+    <div class="floaters">
+      <span style="top: 8%; left: 8%; font-size: 70px">°C</span>
+      <span style="top: 15%; right: 12%; font-size: 90px">°F</span>
+      <span style="bottom: 12%; left: 12%; font-size: 80px">K</span>
+      <span style="bottom: 18%; right: 8%; font-size: 60px">℃</span>
+      <span style="top: 45%; left: 5%; font-size: 65px">°</span>
+      <span style="top: 55%; right: 5%; font-size: 65px">℉</span>
+    </div>
+
+    <main class="wrapper">
+      <section class="card" id="card">
+        <!-- Header -->
+        <div class="header">
+          <div class="icon-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M14 14.76V3.5a2 2 0 0 0-4 0v11.26a4 4 0 1 0 4 0z"></path>
+            </svg>
+          </div>
+
+          <div>
+            <h1>Temperature Converter</h1>
+            <p>Convert temperatures instantly and accurately.</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Body -->
+        <div class="body">
+          <!-- Temperature -->
+          <div class="field">
+            <label>Temperature</label>
+
+            <div class="input-wrap" id="inputField">
+              <input id="tempInput" type="number" placeholder="Enter value" />
+
+              <span class="unit-tag" id="unitTag">°C</span>
+            </div>
+
+            <div class="err-msg" id="errMsg"></div>
+          </div>
+
+          <!-- Conversion -->
+          <div class="field">
+            <label>Convert To</label>
+
+            <div class="select-wrap">
+              <select id="convSel">
+                <option value="c-f">Celsius → Fahrenheit</option>
+
+                <option value="f-c">Fahrenheit → Celsius</option>
+
+                <option value="c-k">Celsius → Kelvin</option>
+
+                <option value="k-c">Kelvin → Celsius</option>
+              </select>
+
+              <div class="arrow">▼</div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="btns">
+            <button class="btn-convert" id="convertBtn">
+              Convert
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <button class="btn-reset" id="resetBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="M20.49 15A9 9 0 0 1 5 19.5L1 14"></path>
+                <path d="M3.51 9A9 9 0 0 1 19 4.5L23 10"></path>
+              </svg>
+
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="result" id="resultPanel">
+          <div class="result-label" id="resultLabel">Result</div>
+
+          <div class="result-val">
+            <span class="result-num" id="resultNum"> — </span>
+
+            <span class="result-unit" id="resultUnit"></span>
+          </div>
+
+          <div class="result-eq" id="resultEq"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

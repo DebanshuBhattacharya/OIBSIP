@@ -1,1 +1,878 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIDE — Move Without Limits</title>
+    <meta
+      name="description"
+      content="STRIDE — premium performance footwear engineered for movement. Shop the new SS26 collection."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
+    <!-- Navbar -->
+    <div class="navbar-wrap" id="navbarWrap">
+      <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <a href="#hero" class="nav-logo"
+          ><span class="dot" aria-hidden="true"></span>STRIDE</a
+        >
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#story">Technology</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#gallery" class="btn btn-primary" data-magnetic>Discover </a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero">Home</a>
+      <a href="#story">Technology</a>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <div
+          class="hero-bg-word bg-word"
+          style="top: 6%; left: -4%; font-size: 24vw"
+        >
+          STRIDE
+        </div>
+        <div class="container hero-grid" id="heroContent">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">
+              <span class="pulse" aria-hidden="true"></span>
+            </p>
+            <h1 class="hero-title split" id="heroTitle">
+              <span class="line"><span>MADE FOR</span></span>
+              <span class="line"><span>THE DAILY</span></span>
+              <span class="line"><span class="accent-word">HUSTLE</span></span>
+            </h1>
+            <p class="hero-sub">
+              Sneakers designed for everyday comfort, effortless style, and
+              wherever the day takes you.
+            </p>
+            <div class="hero-buttons">
+              <a href="#variants" class="btn btn-primary" data-magnetic
+                >Explore</a
+              >
+              <a href="#story" class="btn btn-outline" data-magnetic
+                >See the Tech</a
+              >
+            </div>
+          </div>
+          <div class="hero-stage" id="heroVisual">
+            <img
+              src="images/ChatGPT Image Jul 6, 2026, 10_15_02 AM.png"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Marquee -->
+      <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-row">
+          <div class="marquee-track" id="track1">
+            <span class="m-outline">EVERYDAY • EVERYWHERE • &nbsp;</span
+            ><span class="m-solid">EVERYDAY • EVERYWHERE • &nbsp;</span
+            ><span class="m-outline">EVERYDAY • EVERYWHERE • &nbsp;</span
+            ><span class="m-solid">EVERYDAY • EVERYWHERE • &nbsp;</span>
+          </div>
+        </div>
+        <div class="marquee-row">
+          <div class="marquee-track" id="track2">
+            <span class="m-solid">STYLE WITHOUT TRYING •&nbsp;</span
+            ><span class="m-accent">STYLE WITHOUT TRYING •&nbsp;</span
+            ><span class="m-solid">STYLE WITHOUT TRYING •&nbsp;</span>
+          </div>
+        </div>
+        <div class="marquee-row">
+          <div class="marquee-track" id="track3">
+            <span class="m-outline">LESS HYPE • MORE STYLE •&nbsp;</span
+            ><span class="m-solid">LESS HYPE • MORE STYLE •&nbsp;</span
+            ><span class="m-outline">LESS HYPE • MORE STYLE •&nbsp;</span
+            ><span class="m-solid">LESS HYPE • MORE STYLE •&nbsp;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section class="pad" aria-labelledby="introTitle">
+        <div class="bg-word" style="top: 10%; left: 20%; font-size: 18vw">
+          MOTION
+        </div>
+        <div class="container">
+          <span class="section-eyebrow">OUR PHILOSOPHY</span>
+          <h2
+            class="section-title split"
+            id="introTitle"
+            style="max-width: 820px"
+          >
+            <span class="line"><span>Style starts </span></span>
+            <span class="line"><span>from the ground up —</span></span>
+            <span class="line"
+              ><span class="accent-word">built for the bold.</span></span
+            >
+          </h2>
+          <p class="section-desc" id="introDesc" style="margin-top: 28px">
+            Clean design, everyday comfort, and effortless style. Made to be the
+            pair you reach for every morning.
+          </p>
+        </div>
+      </section>
+
+      <!-- Pinned storytelling — technology -->
+      <section
+        class="story-pin"
+        id="story"
+        aria-label="Product technology walkthrough"
+      >
+        <div class="story-stage" id="storyStage">
+          <div
+            style="font-size: 12rem"
+            class="story-bg-word"
+            id="storyBgWord"
+            aria-hidden="true"
+          >
+            LIMITLESS
+          </div>
+          <div class="story-shoe-wrap" id="storyShoe">
+            <img
+              src="images/ChatGPT Image Jul 5, 2026, 06_17_36 PM.png"
+              alt="Sneaker technology showcase, rotating in studio light"
+              loading="lazy"
+            />
+          </div>
+          <div class="story-card c1" id="card1">
+            <h4>Always Ready</h4>
+            <p>Your plans don't stop. Neither do these.</p>
+          </div>
+          <div class="story-card c2" id="card2">
+            <h4>No Bad Outfit Days</h4>
+            <p>The pair you'll reach for without thinking.</p>
+          </div>
+          <div class="story-card c3" id="card3">
+            <h4>Keep It Cool</h4>
+            <p>Cool comfort, even when the day heats up.</p>
+          </div>
+          <div class="story-card c4" id="card4">
+            <h4>Future Friendly</h4>
+            <p>Style that leaves a lighter footprint.</p>
+          </div>
+          <div class="story-progress" aria-hidden="true">
+            <span id="p1" class="active"></span><span id="p2"></span
+            ><span id="p3"></span><span id="p4"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="pad" id="features" aria-labelledby="featuresTitle">
+        <div class="bg-word" style="top: 6%; right: 10%; font-size: 15vw">
+          DETAIL
+        </div>
+        <div class="container">
+          <span class="section-eyebrow">Why STRIDE</span>
+          <h2
+            class="section-title split title-gap"
+            id="featuresTitle"
+            style="max-width: 640px"
+          >
+            <span class="line"><span>Everything your</span></span>
+            <span class="line"
+              ><span class="accent-word">favorite pair needs.</span></span
+            >
+          </h2>
+          <div class="features-grid">
+            <div class="feature-card" data-tilt>
+              <div class="feature-badge" aria-hidden="true">01</div>
+              <h3>All-Day Comfort</h3>
+              <p>Soft cushioning that keeps every step feeling effortless.</p>
+            </div>
+            <div class="feature-card" data-tilt>
+              <div class="feature-badge" aria-hidden="true">02</div>
+              <h3>Fits Every Look</h3>
+              <p>Clean, minimal design that works with every outfit.</p>
+            </div>
+            <div class="feature-card" data-tilt>
+              <div class="feature-badge" aria-hidden="true">03</div>
+              <h3>Stays Grounded</h3>
+              <p>
+                Serious grip that handles sudden random shortcuts without the
+                drama.
+              </p>
+            </div>
+            <div class="feature-card" data-tilt>
+              <div class="feature-badge" aria-hidden="true">04</div>
+              <h3>Zoned Ventilation</h3>
+              <p>Micro-mesh paneling placed exactly where heat builds up.</p>
+            </div>
+            <div class="feature-card" data-tilt>
+              <div class="feature-badge" aria-hidden="true">05</div>
+              <h3>Sub-240g Engineering</h3>
+              <p>
+                Unnecessary bulk stripped away. Pure weightless performance that
+                lasts all day.
+              </p>
+            </div>
+            <div class="feature-card" data-tilt>
+              <div class="feature-badge" aria-hidden="true">06</div>
+              <h3>Made Better</h3>
+              <p>
+                Thoughtfully crafted with more sustainable materials for a
+                lighter footprint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Marquee 2 -->
+      <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-row">
+          <div class="marquee-track" id="track4">
+            <span class="m-accent">STRIDE OR NOTHING •&nbsp;</span
+            ><span class="m-outline">STRIDE OR NOTHING •&nbsp;</span
+            ><span class="m-solid">STRIDE OR NOTHING •&nbsp;</span
+            ><span class="m-outline">STRIDE OR NOTHING •&nbsp;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Color variants -->
+      <section class="pad" id="variants" aria-labelledby="variantsTitle">
+        <div class="container">
+          <span class="section-eyebrow">Choose Your Shade</span>
+          <h2
+            class="section-title split title-gap"
+            id="variantsTitle"
+            style="max-width: 600px"
+          >
+            <span class="line"><span>One silhouette,</span></span>
+            <span class="line"
+              ><span class="accent-word">four distinct vibes.</span></span
+            >
+          </h2>
+          <div class="variants-wrap">
+            <div class="variant-stage" id="variantStage">
+              <img
+                src="images/Gemini_Generated_Image_3rqvh43rqvh43rqv.png"
+                alt="Air Runner Pro in Midnight colorway"
+                class="active"
+                data-variant="0"
+                loading="lazy"
+              />
+              <img
+                src="images/Gemini_Generated_Image_hkgebzhkgebzhkge.png"
+                alt="Air Runner Pro in Chalk colorway"
+                data-variant="1"
+                loading="lazy"
+              />
+              <img
+                src="images/Gemini_Generated_Image_sg0445sg0445sg04.png"
+                alt="Air Runner Pro in Rust colorway"
+                data-variant="2"
+                loading="lazy"
+              />
+              <img
+                src="images/Gemini_Generated_Image_eici1keici1keici.png"
+                alt="Air Runner Pro in Slate colorway"
+                data-variant="3"
+                loading="lazy"
+              />
+            </div>
+            <div id="variantInfo">
+              <p class="section-desc section-desc--visible">
+                Same zero-gravity cushioning, same aggressive tread— Just pick
+                the shade that hits best with your wardrobe.
+              </p>
+              <div
+                class="variant-swatches"
+                role="group"
+                aria-label="Colorway selector"
+              >
+                <button
+                  class="swatch active"
+                  style="background: #2e2c2d"
+                  data-target="0"
+                  aria-label="Phantom Black colorway"
+                  aria-pressed="true"
+                ></button>
+                <button
+                  class="swatch"
+                  style="background: #efefef"
+                  data-target="1"
+                  aria-label="Bone White colorway"
+                  aria-pressed="false"
+                ></button>
+                <button
+                  class="swatch"
+                  style="background: #b5502e"
+                  data-target="2"
+                  aria-label="Burnt Ochre colorway"
+                  aria-pressed="false"
+                ></button>
+                <button
+                  class="swatch"
+                  style="background: #c7c3c2"
+                  data-target="3"
+                  aria-label="Concrete Grey colorway"
+                  aria-pressed="false"
+                ></button>
+              </div>
+              <p class="variant-name" id="variantName">Phantom Black</p>
+              <p class="variant-price">$149.00</p>
+              <ul class="variant-specs" aria-label="Product highlights">
+                <li>True to size</li>
+                <li>Vegan materials</li>
+                <li>Free shipping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Horizontal gallery -->
+      <section class="gallery-pin" id="gallery" aria-label="Product gallery">
+        <div class="gallery-stage">
+          <div class="gallery-heading">
+            <span class="section-eyebrow">The Collection</span>
+            <h2 class="section-title split" id="galleryTitle">
+              <span class="line"
+                ><span style="font-size: 40px; margin-bottom: 50px"
+                  >Every angle, engineered.</span
+                ></span
+              >
+            </h2>
+          </div>
+          <div
+            style="margin-top: 250px"
+            class="gallery-track"
+            id="galleryTrack"
+          >
+            <div class="gallery-item">
+              <img
+                src="images/Gemini_Generated_Image_9h89yp9h89yp9h89.png"
+                alt="Air Runner Pro sneaker"
+                loading="lazy"
+              /><span class="tag">Burnt Ochre</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Gemini_Generated_Image_tc1um3tc1um3tc1u.png"
+                alt="Runner in urban lifestyle setting"
+                loading="lazy"
+              /><span class="tag">Bone White</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Gemini_Generated_Image_3rqvh43rqvh43rqv.png"
+                alt="Close-up of sneaker sole detail"
+                loading="lazy"
+              /><span class="tag">Phantom Black</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Gemini_Generated_Image_4ruhvs4ruhvs4ruh.png"
+                alt="UltraFlex Knit sneaker"
+                loading="lazy"
+              /><span class="tag">Cocoa Brown</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Gemini_Generated_Image_mr5vlvmr5vlvmr5v.png"
+                alt="Athlete training outdoors"
+                loading="lazy"
+              /><span class="tag">Lavender Mist</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Gemini_Generated_Image_elpintelpintelpi.png"
+                alt="Trail Explorer sneaker"
+                loading="lazy"
+              /><span class="tag">Eucalyptus Green</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/ChatGPT Image Jul 6, 2026, 12_37_51 PM.png"
+                alt="Trail Explorer sneaker"
+                loading="lazy"
+              /><span class="tag">Ocean BLue</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/ChatGPT Image Jul 6, 2026, 12_43_14 PM.png"
+                alt="Trail Explorer sneaker"
+                loading="lazy"
+              /><span class="tag">Espresso Brown</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/ChatGPT Image Jul 6, 2026, 12_48_22 PM.png"
+                alt="Trail Explorer sneaker"
+                loading="lazy"
+              /><span class="tag">Forest Eclipse</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="pad" id="stats" aria-labelledby="statsTitle">
+        <div
+          class="bg-word hehehe"
+          style="bottom: -15%; right: 40%; font-size: 16vw"
+        >
+          CULTURE
+        </div>
+        <div class="container">
+          <span class="section-eyebrow">THREADS</span>
+          <h2 class="section-title split title-gap" id="statsTitle">
+            <span class="line"><span>Redefining youth culture with</span></span>
+            <span class="line"><span>100% ethical threads. </span></span>
+          </h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" data-count="120" data-suffix="K+">0</div>
+              <div class="stat-label">Customers</div>
+            </div>
+            <div class="stat-card">
+              <div
+                class="stat-number"
+                data-count="4.9"
+                data-suffix="★"
+                data-decimal="1"
+              >
+                0
+              </div>
+              <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="50" data-suffix="+">0</div>
+              <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="98" data-suffix="%">0</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials-section">
+        <div class="section-header">
+          <span>Trusted by Thousands</span>
+          <h2>Community Reviews</h2>
+        </div>
+
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <p class="quote">
+              "The quality is premium from the stitching to the sole. I've
+              received compliments every time I've worn them."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnI2aXA6XyJELYFvocqDQ9HGWDw0_pZktVAdn6YZi8NQ&s=10"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Emma Carter</h4>
+                <p>Sneaker Enthusiast</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote">
+              "The comfort surprised me the most. I wore them for an entire day
+              around the city and my feet never felt tired. Easily my new
+              everyday sneakers."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%"
+                  src="https://images.unsplash.com/photo-1608975321561-176c1b187d24?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHlvdXRoJTIwbW9kZWxzfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Ryan Brooks</h4>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote">
+              "The perfect balance between style and comfort. They look just as
+              good with jeans as they do with oversized streetwear."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%"
+                  src="https://media.istockphoto.com/id/2220557187/photo/stylish-young-man-posing-in-striped-shirt-and-cargo-pants-with-accessories-on-green-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=gvkWIucsGFmFPW7wi5drYPggJokGrSQNV9iuZ4EMR5E="
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Noah Wilson</h4>
+                <p>Fashion Creator</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote">
+              "I've owned sneakers from almost every major brand, but STRIDE
+              feels different. Lightweight, durable, and incredibly
+              comfortable."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%"
+                  src="https://images.unsplash.com/photo-1778395570818-ea5c7dd6d239?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Olivia Martinez</h4>
+                <p>Collector</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote">
+              "The blue pair is my favorite. Outstanding craftsmanship."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%; background-position: center"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI96gsPeyhuge8J2GMmsirzagmUGq-vFXTvKmSOqOMWg&s=10"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Walter White</h4>
+                <p>Chemistry Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">
+              "The attention to detail is incredible. From the stitching to the
+              sole, everything feels premium."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45mhHYLwoglqrW4vCTakKjxkrvaTUeiKHDruBwIVURQ&s=10"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Sophia Turner</h4>
+                <p>Sneaker Enthusiast</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">
+              "Reliable gear makes all the difference. STRIDE delivers."
+            </p>
+            <div class="author">
+              <div class="avatar">
+                <img
+                  style="border-radius: 50%"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpoUq-Ax-DDWIPlTkN_m08ZuBa26gtt2yf-uZrak99sA&s=10"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <h4>Leon S. Kennedy</h4>
+                <p>Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Craftsmanship -->
+      <section class="pad" id="craftsmanship" aria-labelledby="craftTitle">
+        <div class="container">
+          <div class="sustain-wrap">
+            <div>
+              <span class="section-eyebrow">Craftsmanship</span>
+
+              <h2 class="section-title split title-gap-tight" id="craftTitle">
+                <span class="line">
+                  <span>Every stitch.</span>
+                </span>
+
+                <span class="line">
+                  <span class="accent-word">Every detail.</span>
+                </span>
+              </h2>
+
+              <div class="sustain-figure">
+                <div data-count-figure="100">
+                  <span class="sustain-figure-num">0</span>
+                  <span style="font-size: 0.4em">%</span>
+                </div>
+
+                <p
+                  style="
+                    margin-top: 0.5rem;
+                    padding-left: 2.5rem;
+                    font-size: 1.95rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.15em;
+                    opacity: 0.7;
+                  "
+                >
+                  Quality Score
+                </p>
+              </div>
+
+              <div class="sustain-list">
+                <div class="sustain-item">
+                  <span class="mark" aria-hidden="true"></span>
+                  Precision stitching for long-lasting durability
+                </div>
+
+                <div class="sustain-item">
+                  <span class="mark" aria-hidden="true"></span>
+                  Premium materials selected for everyday performance
+                </div>
+
+                <div class="sustain-item">
+                  <span class="mark" aria-hidden="true"></span>
+                  Comfort engineered from heel to toe
+                </div>
+              </div>
+            </div>
+
+            <div class="sustain-visual">
+              <img
+                src="images/ChatGPT Image Jul 5, 2026, 07_51_55 PM.png"
+                alt="Close-up of premium sneaker craftsmanship"
+                loading="lazy"
+                id="sustainImg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="pad" id="faq" aria-labelledby="faqTitle">
+        <div
+          class="bg-word hehehe"
+          style="bottom: 40%; left: 20%; font-size: 15vw"
+        >
+          ANSWERS
+        </div>
+        <div class="container">
+          <span
+            class="section-eyebrow"
+            style="text-align: center; display: block"
+            >FAQ</span
+          >
+          <h2
+            class="section-title split title-gap"
+            id="faqTitle"
+            style="text-align: center; max-width: none"
+          >
+            <span class="line" style="text-align: center"
+              ><span>Questions, answered.</span></span
+            >
+          </h2>
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button class="faq-question" aria-expanded="true">
+                What makes STRIDE different?
+                <span class="icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Every pair is designed with a balance of minimal aesthetics,
+                  premium materials, and all-day comfort. Our focus isn't
+                  chasing trends—it's creating sneakers you'll want to wear
+                  every day.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Are STRIDE sneakers comfortable for daily wear?
+                <span class="icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Absolutely. Lightweight construction, responsive cushioning,
+                  and a supportive fit make STRIDE ideal for everything from
+                  morning commutes to evening walks.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What inspired the design?
+                <span class="icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  The collection draws inspiration from modern architecture,
+                  street culture, and timeless silhouettes, resulting in
+                  sneakers that remain stylish season after season.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What materials are used?
+                <span class="icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Each pair combines carefully selected premium materials with
+                  precision craftsmanship to deliver durability and comfort.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="finale" id="finale">
+        <div class="noise"></div>
+
+        <div class="bgWord">STRIDE</div>
+
+        <svg
+          class="shoe one"
+          viewBox="0 0 512 512"
+          fill="none"
+          stroke="#111"
+          stroke-width="8"
+        >
+          <path
+            d="M60 320C120 300 165 220 180 150C210 180 240 250 320 280C360 295 420 300 470 340V380H60Z"
+          />
+        </svg>
+
+        <svg
+          class="shoe two"
+          viewBox="0 0 512 512"
+          fill="none"
+          stroke="#111"
+          stroke-width="8"
+        >
+          <path
+            d="M60 320C120 300 165 220 180 150C210 180 240 250 320 280C360 295 420 300 470 340V380H60Z"
+          />
+        </svg>
+
+        <div class="content">
+          <div class="small">Crafted for Movement</div>
+
+          <h1>
+            Every Journey<br />
+            Begins With<br />
+            A <span class="highlight">Single Stride.</span>
+          </h1>
+
+          <div class="finalLine"></div>
+
+          <p>
+            Some chase trends. Others chase destinations. At
+            <strong>STRIDE</strong>, we believe every pair tells a story— from
+            the very first step to every unforgettable moment that follows.
+          </p>
+
+          <a class="finalbtn" href="#gallery"> Explore Collection → </a>
+
+          <div class="signature">— STRIDE</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <span class="dot" aria-hidden="true"></span>STRIDE
+            </div>
+            <p>
+              Premium footwear engineered for movement, made for everyday
+              explorers.
+            </p>
+          </div>
+          <div class="footer-cols">
+            <nav class="footer-col" aria-label="Shop links">
+              <h4>Shop</h4>
+              <a href="#gallery">Collection</a><a href="#story">Technology</a
+              ><a href="#variants">Colorways</a>
+            </nav>
+            <nav class="footer-col" aria-label="Support links">
+              <h4>Support</h4>
+              <a href="#faq">FAQ</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Stride. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

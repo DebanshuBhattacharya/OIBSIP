@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Debanshu Bhattacharya</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <!-- Background particle canvas (same setup as the main page) -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Navbar — structure and behavior mirrors index.html so it feels
+         like the same site. Links back to the main page's sections since
+         this page has none of its own besides "Projects". -->
+    <nav id="nav">
+      <a href="index.html" class="logo">
+        <span>DB</span>
+      </a>
+      <ul class="nav-links" role="list" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="nav-cta magnetic">Hire Me</a>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu — same link set as desktop nav -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+      <p class="page-hero__eyebrow">Selected work</p>
+      <h1 class="page-hero__heading">Things I've <em>built</em></h1>
+      <p class="page-hero__sub">
+        Projects I've built while learning frontend development, focusing on
+        responsive design, interactive user experiences, and modern web
+        technologies.
+      </p>
+    </header>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+      <button class="filter-btn" data-filter="CSS">CSS</button>
+      <button class="filter-btn" data-filter="HTML">HTML</button>
+      <button class="filter-btn" data-filter="API">API</button>
+    </div>
+
+    <!-- PROJECTS GRID -->
+    <section class="projects-sec" aria-label="Projects">
+      <div class="projects-inner">
+        <div class="project-grid">
+          <!-- Card 1 — Featured -->
+          <article
+            class="project-card project-card--featured"
+            tabindex="0"
+            data-tags="HTML CSS JavaScript"
+          >
+            <div class="project-card__img">
+              <a href="https://debanshu-s-portfolio.vercel.app/"
+                ><img
+                  src="images/Portfolio Project.png"
+                  alt="Modern Portfolio Site screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                  "
+              /></a>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__number">01</p>
+              <span class="project-card__arrow">↗</span>
+              <h2 class="project-card__title">My Corner of the Internet</h2>
+
+              <p class="project-card__desc">
+                A personal portfolio built to experiment with design,
+                animations, and creating a smooth experience on the web.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GSAP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FLICK - Movie Explorer -->
+
+          <article
+            class="project-card"
+            tabindex="0"
+            data-tags="HTML CSS JavaScript API"
+          >
+            <div class="project-card__img">
+              <a href="https://flick-movie-explorer.vercel.app/"
+                ><img
+                  src="images/FLICK - Movie Explorer.png"
+                  alt="FLICK - Movie Explorer screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                  "
+              /></a>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__number">02</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">Flick</h2>
+
+              <p class="project-card__desc">
+                A movie explorer because choosing what to watch is sometimes
+                harder than building the website.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">APIs</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- STRIDE - Sneakers Brand -->
+
+          <article
+            class="project-card"
+            tabindex="0"
+            data-tags="HTML CSS JavaScript GSAP"
+          >
+            <div class="project-card__img">
+              <a href="https://stride-by-debanshu.vercel.app/"
+                ><img
+                  src="images/STRIDE - Sneakers Brand.png"
+                  alt="STRIDE - Sneakers Brand screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                  "
+              /></a>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__number">03</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">STRIDE</h2>
+
+              <p class="project-card__desc">
+                The animations did not need to go this hard . But they did
+                anyways.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">APIs</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- AFTERTASTE - Food Discovery -->
+
+          <article
+            class="project-card"
+            tabindex="0"
+            data-tags="HTML CSS JavaScript"
+          >
+            <div class="project-card__img">
+              <a href="https://the-aftertaste.vercel.app/"
+                ><img
+                  src="images/The AfterTaste.png"
+                  alt="Aftertaste website screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'project-card__icon-wrap\'>🍽️</div>'
+                  "
+              /></a>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__number">04</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">The Aftertaste</h2>
+
+              <p class="project-card__desc">
+                A food experience website built around visuals, smooth
+                interactions, and making browsing feel enjoyable.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GSAP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bibilion - Library management system -->
+          <article class="project-card" tabindex="0" data-tags="Java Database">
+            <div class="project-card__img">
+              <a href="https://Bibilion-Library-System.vercel.app">
+                <img
+                  src="images/bibilion.png"
+                  alt="Bibilion - Library management system screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                  "
+              /></a>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__number">05</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">Library System</h2>
+
+              <p class="project-card__desc">
+                A project where I tried turning a simple library process into
+                something easier to manage with books, users, and records.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node JS</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </article>
+          <!-- Amazon Clone -->
+
+          <article
+            class="project-card"
+            tabindex="0"
+            data-tags="HTML CSS JavaScript"
+          >
+            <div class="project-card__img">
+              <img
+                src="images/Amazon Clone.png"
+                alt="Amazon Clone screenshot"
+                loading="lazy"
+                onerror="
+                  this.parentElement.innerHTML =
+                    '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                "
+              />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__number">06</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">Amazon Clone</h2>
+
+              <p class="project-card__desc">
+                Tried recreating Amazon.<br />
+                Turns out e-commerce has a lot going on.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Jansetu -->
+
+          <article
+            class="project-card"
+            tabindex="0"
+            data-tags="Web Development"
+          >
+            <div class="project-card__img">
+              <img
+                src="images/Jansetu.png"
+                alt="JanSetu Civic Connect screenshot"
+                loading="lazy"
+                onerror="
+                  this.parentElement.innerHTML =
+                    '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                "
+              />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__number">07</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">JanSetu</h2>
+
+              <p class="project-card__desc">
+                A simple platform idea focused on making communication between
+                people and services easier.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- The Green Trails -->
+
+          <article class="project-card" tabindex="0" data-tags="Travel Website">
+            <div class="project-card__img">
+              <img
+                src="images/The Green Trails.png"
+                alt="The Green Trails - Eco Tourism screenshot"
+                loading="lazy"
+                onerror="
+                  this.parentElement.innerHTML =
+                    '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                "
+              />
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__number">08</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">The Green Trails</h2>
+
+              <p class="project-card__desc">
+                A travel website built to explore layouts, visuals, and creating
+                an immersive experience.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ATM Simulator -->
+
+          <article class="project-card" tabindex="0" data-tags="Java Python">
+            <div class="project-card__img">
+              <img
+                src="images/Atm Machine.png"
+                alt="ATM Simulator screenshot"
+                loading="lazy"
+                onerror="
+                  this.parentElement.innerHTML =
+                    '<div class=\'project-card__icon-wrap\'>🖥️</div>'
+                "
+              />
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__number">09</p>
+              <span class="project-card__arrow">↗</span>
+
+              <h2 class="project-card__title">ATM Simulator</h2>
+
+              <p class="project-card__desc">
+                A small banking simulation project where I explored logic,
+                transactions, and building functional systems.
+              </p>
+
+              <div class="project-card__tags">
+                <span class="tag">HTML CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">MySql</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER — same layout as the main page, without the easter egg -->
+    <footer>
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 All Rights Reserved • Made by Debanshu</span>
+        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+          Back to Top ↑
+        </button>
+      </div>
+    </footer>
+
+    <script src="projects.js"></script>
+  </body>
+</html>
